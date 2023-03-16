@@ -4,3 +4,5 @@
 creds.py
 _pycache_
 .pyc
+*.csv
+*.pyc
