@@ -70,7 +70,7 @@ for i,row in data_df.iterrows():
 def add_table(df,table):
 
     # script to create sql database for needed tables
-    engine = create_engine(f'mysql+pymysql://root:{pw}@localhost/housing')
+    engine = create_engine(f'mysql+pymysql://admin:{pw}@database1.cx3lr0rjdt4v.us-east-2.rds.amazonaws.com/housing')
     df.to_sql(f"{table}",con=engine, if_exists='replace')
 
 dfs=[]
